@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rebeccapurple;
+    margin: 0;
+    padding: 0; 
+    color: #fff;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.pw-container{
+background-color: rgb(46, 12, 80);
+min-width: 350px;
+box-shadow: 0 4px 10px rgba( 0 ,0, 0, 0, 0.8);
+}
+.pw{
+    background-color: rebeccapurple;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    font-size: 25px;
+    position: relative;
+    padding: 1rem;
+    overflow:auto    ;
+}
+.pw button{
+position: absolute;
+background-color: #fff;
+color: rebeccapurple;
+border:none;
+top: 0;
+border-radius: 5px;
+font-size: 18px;
+padding: 5px;
+right: 0%;
+cursor: pointer ;
+transform: translate(0%,8%);
+transition:opacity 0.3s ease-out;
+opacity:0;
+}
+.pw:hover button{
+    opacity: 1;
+}
+.pw:hover{
+
+}
+.pw-header{
+padding: 1rem;
+}
+.pw-body{
+    padding: 0 1rem 1rem;
+}
+.form-control{
+    display: flex;
+    justify-content: space-between  ;
+    margin:  0.5rem 0 ;
+}
+.generate{
+    display:block;
+    background-color:#ecb602;
+    color:rebeccapurple;
+    font-weight:  bold;
+    padding:1rem;
+    font-size:1rem;
+    border: none;
+    width: 100%;
+    cursor: pointer ;
+}
+@media screen and(max-width :768){
+.pw{
+    font-size: 16px;
+}
+.pw-container{
+    width: 350px;
+}
+} 
